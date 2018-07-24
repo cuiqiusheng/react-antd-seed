@@ -22,9 +22,12 @@
   "rules": {
     // https://eslint.org/docs/rules/
     "semi": ["error", "never"],
-    "max-len": ["error", { "code": 120, "tabWidth": 2, "comments": 120 }],
+    // "max-len": ["error", { "code": 120, "tabWidth": 2, "comments": 120 }],
+    "max-len": ["off"],
     "no-bitwise": ["off"],
-    "comma-dangle": ["error", "never"],
+    "no-console": ["off"],
+    // "comma-dangle": ["error", "never"],
+    "comma-dangle": ["off"],
     "guard-for-in": ["off"],
     "padded-blocks": ["off"],
     "no-else-return": ["off"],
@@ -55,9 +58,25 @@
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
     "react/no-unused-prop-types": ["off"],
     "react/forbid-prop-types": ["off"],
-    "react/no-multi-comp": ["off"]
+    "react/no-multi-comp": ["off"],
+
+    "react/jsx-indent": ["off"],
+    "arrow-parens": ["off"],
+    "react/jsx-boolean-value": ["off"],
+    "linebreak-style": ["off"],
+    "import/extensions": ["off"],
+    "no-restricted-globals": ["off"],
+    "no-param-reassign": ["off"],
+    "react/sort-comp": ["off"],
+    "react/no-array-index-key": ["off"],
+    "no-plusplus": ["off"],
+    "no-loop-func": ["off"],
+    "no-nested-ternary": ["off"]
   },
   "settings": {
     "import/resolver": "webpack"
+  },
+  "globals": {
+    "_": false
   }
 }

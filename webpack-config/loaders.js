@@ -84,9 +84,9 @@ exports.styles = {
   scss: {
     test: /\.(sass|scss)$/,
     use: __DEV__ ?
-      [ 'style-loader', 'css-loader', postCSSLoader, 'sass-loader' ] :
+      [ 'style-loader', moduleCSSLoader, postCSSLoader, 'sass-loader' ] :
       ExtractTextPlugin.extract({
-        use: [ 'css-loader', postCSSLoader, 'sass-loader' ]
+        use: [ moduleCSSLoader, postCSSLoader, 'sass-loader' ]
       })
   }
 }

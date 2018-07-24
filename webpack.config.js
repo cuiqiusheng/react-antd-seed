@@ -27,7 +27,7 @@ module.exports = {
     historyApiFallback: true,
     hot: true,
     inline: true,
-    port: 5090,
+    port: 9091,
     stats: 'errors-only',
     open: true
   },

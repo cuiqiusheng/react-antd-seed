@@ -1,8 +1,9 @@
 /**
- * @summary 模板组件，新建组件时可复制此文件夹，改名即可
+ * @summary
  */
 import React, { Component } from 'react'
-import style from './style.css'
+
+import style from './style.scss'
 
 class Model extends Component {
 
